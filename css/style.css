@@ -13,6 +13,7 @@ body{
     /* background-color: black; */
 }
 
+
 .scroll-up-btn {
     position: fixed;
     display: none;
@@ -81,11 +82,13 @@ header span{
         margin-top:2rem;
 
     }
+
+}
+@media (max-width:654px) {
     input{
-     width: 8rem;       
+       width:50%;
     }
 }
-
 .project{
     font-size: 1.3rem;
 }
