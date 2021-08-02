@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+html
+{
+    scroll-behavior: smooth;
+    
+}
+body{
+    scroll-behavior: smooth;
+    /* background-color: black; */
+}
+
+.scroll-up-btn {
+    position: fixed;
+    display: none;
+    height: 45px;
+    width: 42px;
+    background: crimson;
+    right: 30px;
+    bottom: 5px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+    border-bottom-width: 2px;
+    cursor: pointer;
+        bottom: 30px;
+
+    transition: all 1s ease;
+}
+
+.cur{
+    cursor: default ;
+}
+
+.scroll-up-btn.show {
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.scroll-up-btn:hover {
+    filter: brightness(90%);
+}
+nav a:hover{
+    color:red;
+}
+header span{
+    cursor: pointer;
+}
+.sarch_bar{
+    height:2rem;
+}
+#one_mg{
+    height:91vh;
+}
+@media (max-width:1020px) {
+    .sarch_bar{
+        margin-top: 1.5rem;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+@media (max-width:767px) {
+    .sarch_bar{
+      margin-top: 1.5rem;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    nav{
+        margin-top:0.5rem;
+    }
+}
+@media (max-width:347px) {
+    #welcome{
+        margin-top:2rem;
+
+    }
+    input{
+     width: 8rem;       
+    }
+}
+
+.project{
+    font-size: 1.3rem;
+}
+h5{
+    font-size: 0.9rem !important;
+    color:red;
+}
+img{
+    height: 400px;
+    width: 600px;
+}

@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Online image sarch..!</title>
+    <link rel="icon"
+        href="https://image.shutterstock.com/image-vector/bar-lettering-illustration-label-badge-600w-1034296870.jpg"
+        type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="scroll-up-btn" id="scollbtn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+    <header class="bg-black text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+                <img class="w-20 h-12" src="./img/button_r.ico">
+                <span class="ml-3 text-xl">Images Sarch..</span>
+            </a>
+            <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-white justify-center project">
+                <a href="#" target="_blank" class="mr-10 hover:text-red">Project-1</a></li>
+                <a href="#" target="_blank" class="mr-5 hover:text-red">Project-2</a>
+            </nav>
+            <h1 class="text-red-300 mr-10 text-center text-2xl mt-2" id="info">Success</h1>
+            <div class="flex flex-wrap ml-auto sarch_bar">
+                <input class="py-2 px-3 mr-2 border-2 border-gray-600 outline-gray-300 text-black" type="text"
+                    id="sarched_data" placeholder="Sarch any think">
+                <button onclick="sarch()"
+                    class="inline-flex items-center bg-red-500 border-0 py-1 px-3 focus:outline-none hover:bg-red-600 rounded text-white mt-2 md:mt-0">Sarch
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+    </header>
+
+    <button
+        class="h-10 mt-0.5 w-full text-white transition-colors duration-380 bg-red-600 focus:shadow-outline hover:bg-black"
+        onclick="dark_mode()" id="btn_dark"><b>Dark mode</b></button>
+    <div class="w-full bg-center bg-cover h-96 mt-1" id="welcome" style=" background-image: url(./img/bg.jpg);">
+        <div class="flex items-center justify-center w-full h-full bg-gray-900 bg-opacity-70">
+            <div class="text-center">
+                <h1 class="text-2xl font-semibold text-white uppercase lg:text-3xl">Welcome <span
+                        class="text-blue-400 underline">User's</span></h1>
+                <button onclick="up()"
+                    class="w-full px-4 py-2 mt-4 text-sm font-medium text-white uppercase transition-colors duration-200 transform bg-blue-600 rounded-md lg:w-auto hover:bg-blue-500 focus:outline-none focus:bg-blue-500">Start</button>
+                <button onclick="reset()"
+                    class="w-full px-4 py-2 mt-4 lg:ml-4 text-sm font-medium text-white uppercase transition-colors duration-200 transform rounded-md lg:w-auto hover:bg-red-500 focus:outline-none focus:bg-blue-500">Reset</button>
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- one news- -->
+    <div class="p-10 bg-white">
+        <div class="max-w-6xl h-full mr-auto ml-auto rounded overflow-hidden shadow-lg" id="one_img">
+
+        </div>
+    </div>
+
+    <!-- All content -->
+    <div class="container mx-auto px-4 mt-15">
+        <section class="pt-8 px-4">
+            <div class="flex flex-wrap -mx-4" id="imgs_collections">
+            </div>
+        </section>
+
+    </div>
+
+
+    <!-- Footer pagination  -->
+    <div class="flex w-full h-20 bg-black hidden" id="btns">
+
+    </div>
+
+
+
+
+    <div class="py-16 flex flex-col justify-center items-center">
+
+
+        <p tabindex="0" class="focus:outline-none mt-6 text-xs lg:text-sm leading-none text-gray-900 dark:text-gray-50">
+            Rohit singh
+            panwar
+            |
+            2020 All rights reserved..</p>
+    </div>
+    </footer>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="./script/aos.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script>
+        AOS.init({
+            delay: 170,
+            offset: 80,
+            duration: 900,
+            easing: 'ease', once: false,
+
+        });
+    </script>
+    <script src="./script/FileSaver.min.js"></script>
+    <script src="./script/script.js">    </script>
+
+</body>
+
+</html>
