@@ -205,7 +205,7 @@ const set_data = (element) => {
                 titles = "Not found..!";
             }
             let collection_img = `
-                        <div data-aos="fade-right" class="md:w-1/3 px-4 mb-8">
+                        <div data-aos="fade-right" class="md:w-1/3 sm:h-120 sm:w-90 px-4 mb-8">
                         <a href="${elements['urls']['full']}" target="_blank">
                         <img class="rounded shadow-md"
                                     src="${elements['urls']['small']}" alt="Image">
