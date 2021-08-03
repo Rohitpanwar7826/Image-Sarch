@@ -60,8 +60,8 @@ const one_img = (...args) => {
     if (desc == null || desc == "Nah" || desc == undefined) {
         desc = "Sorry Not found..!";
     }
-    let img_code = ` 
-            <img data-aos="zoom-in" data-aos-offset="180" data-aos-delay="1000" data-aos-duration="1000" id="one_mg" class="w-full" src="${content[args[0]]['urls']['full']}" alt="imgs">
+    let img_code = `
+            <img data-aos="zoom-in" data-aos-offset="180" data-aos-delay="1000" data-aos-duration="1000" class="shadow-xl lg:w-3/4 sm:w-full md:w-full mt-4 mr-auto ml-auto" src="${content[args[0]]['urls']['full']}" alt="imgs">
             <div class="px-6 py-4">
                 <div class="font-bold text-xl mb-2">Likes - ${content[args[0]]['likes']}</div>
                 <p class="text-gray-700 text-base">
@@ -205,10 +205,10 @@ const set_data = (element) => {
                 titles = "Not found..!";
             }
             let collection_img = `
-                        <div data-aos="fade-right" class="md:w-1/3 sm:h-120 sm:w-90 px-4 mb-8">
+                        <div data-aos="fade-right" class="md:w-1/3 px-4 mb-8">
                         <a href="${elements['urls']['full']}" target="_blank">
                         <img class="rounded shadow-md"
-                                    src="${elements['urls']['small']}" alt="Image">
+                                    src="${elements['urls']['regular']}" alt="Image">
 
                         </a>
                                 <div class="visible mt-4" id="title">
