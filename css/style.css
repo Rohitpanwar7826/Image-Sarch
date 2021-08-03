@@ -57,9 +57,8 @@ header span{
 .sarch_bar{
     height:2rem;
 }
-#one_mg{
-    height:91vh;
-}
+
+
 @media (max-width:1024px) {
     .sarch_bar{
         margin-top: 1.5rem;
@@ -106,6 +105,7 @@ header span{
         margin-top:16px;
     }
 }
+
 .project{
     font-size: 1.3rem;
 }
@@ -114,6 +114,6 @@ h5{
     color:red;
 }
 img{
-    height: 400px;
-    width: 600px;
+    width:690px;
+    height:400px;
 }
