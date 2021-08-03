@@ -86,7 +86,19 @@ header span{
 }
 @media (max-width:654px) {
     input{
-       width:50%;
+       width:60%;
+       margin-left:auto;
+       margin-right:auto;
+    }
+}
+@media (max-width:764px) {
+    #info{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    nav{
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 .project{
