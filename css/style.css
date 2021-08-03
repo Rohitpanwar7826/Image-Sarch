@@ -60,7 +60,7 @@ header span{
 #one_mg{
     height:91vh;
 }
-@media (max-width:1020px) {
+@media (max-width:1024px) {
     .sarch_bar{
         margin-top: 1.5rem;
         margin-right: auto;
@@ -100,6 +100,10 @@ header span{
         margin-left: auto;
         margin-right: auto;
     }
+}
+@media (max-width:767px) {
+    #info{
+        margin-top:16px;
 }
 .project{
     font-size: 1.3rem;
