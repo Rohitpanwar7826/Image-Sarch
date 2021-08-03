@@ -41,14 +41,12 @@ const sarch = () => {
 }
 const download = (e) => {
     let img_content_name = document.getElementById("sarched_data").value;
-    if (img_content_name == "") {
-        let img_name = prompt('Please the image name : ', 'Motivational');
+    let img_name = prompt('Please the image name : ', 'Motivational');
+    if (img_name != null) {
         saveAs(content[e.value]['urls']['full'], img_name);
+
     }
-    else {
-        let img_name = prompt('Please the image name : ', img_content_name);
-        saveAs(content[e.value]['urls']['full'], img_name);
-    }
+
 
 }
 
@@ -93,7 +91,6 @@ var fatch_data = (...args) => {
         }).then(element => {
 
             collection_array = element['total_pages'];
-            console.log(collection_array)
             set_data(element);
         })
         .catch(err => {
@@ -136,7 +133,7 @@ const next = () => {
     }
     if (counter == collection_array) {
         counter = 1;
-        console.log(counter)
+        // console.log(counter)
         fatch_data(counter, data);
         buttons_set();
         up();
