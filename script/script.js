@@ -41,7 +41,7 @@ const sarch = () => {
 }
 const download = (e) => {
     let img_content_name = document.getElementById("sarched_data").value;
-    let img_name = prompt('Please the image name : ', 'Motivational');
+    let img_name = prompt('Enter the image name : ', 'Motivational');
     if (img_name != null) {
         saveAs(content[e.value]['urls']['full'], img_name);
 
