@@ -64,7 +64,7 @@ const one_img = (...args) => {
         desc = "Sorry Not found..!";
     }
     let img_code = `
-            <img data-aos="zoom-in" data-aos-offset="180" data-aos-delay="1000" data-aos-duration="1000" class="shadow-xl lg:w-1/2 sm:w-full md:w-full mt-4 mr-auto ml-auto" src="${content[args[0]]['urls']['full']}" alt="imgs">
+            <img data-aos="zoom-in" data-aos-offset="180" data-aos-delay="1000" data-aos-duration="1000" class="shadow-xl lg:w-1/3 sm:w-full md:w-full mt-4 mr-auto ml-auto" src="${content[args[0]]['urls']['full']}" alt="imgs">
             <div class="px-6 py-4">
                 <div class="font-bold text-xl mb-2">Likes - ${content[args[0]]['likes']}</div>
                 <p class="text-gray-700 text-base">
