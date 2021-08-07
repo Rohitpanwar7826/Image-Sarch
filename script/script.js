@@ -64,7 +64,8 @@ const one_img = (...args) => {
         desc = "Sorry Not found..!";
     }
     let img_code = `
-            <img data-aos="zoom-in" data-aos-offset="180" data-aos-delay="1000" data-aos-duration="1000" class="shadow-xl lg:w-1/3 sm:w-full md:w-full mt-4 mr-auto ml-auto" src="${content[args[0]]['urls']['full']}" alt="imgs">
+    <div  data-aos="zoom-in" data-aos-offset="180" data-aos-delay="1000" data-aos-duration="1000" >
+            <img class="shadow-xl lg:w-1/3 sm:w-full md:w-full mt-4 mr-auto ml-auto" src="${content[args[0]]['urls']['full']}" alt="imgs">
             <div class="px-6 py-4">
                 <div class="font-bold text-xl mb-2">Likes - ${content[args[0]]['likes']}</div>
                 <p class="text-gray-700 text-base">
@@ -80,7 +81,8 @@ const one_img = (...args) => {
                     <button onclick="download(this)" value="${args[0]}" class="sm:w-1/2 lg:w-1/6 rounded-2xl mt-4 mb-9 bg-red-500 hover:bg-blue-700 text-white font-bold py-2 px-4 ">
                     Download
                     </button>
-            </div>`
+            </div>
+    </div>`
     one_img_set.innerHTML = img_code;
     up();
 }
